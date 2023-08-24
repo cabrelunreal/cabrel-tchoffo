@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Playfair:opsz@5..1200&family=Raleway:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3, h4{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 16px;
+    color: #000;
+}
+
+header{
+    width: 100%;
+    background: #605C7B;
+}
+
+header .header{
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .header .logo{
+    color: #fff;
+}
+
+header .header ul li .nav-link{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .header .justify-content-end li .nav-link img{
+    width: 20px;
+}
+
+.connect .justify-content-center li .nav-link img{
+    width: 20px;
+}
+
+.connect button, .projects button, .contact form button{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background: #433f5c;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.connect button:hover, .projects button:hover, .contact form button:hover{
+    color: #433f5c;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.containers .bannier-welcome{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.containers .bannier-welcome .float-left{
+    width: 65%;
+    padding: 100px 120px;
+}
+
+.containers .bannier-welcome .float-right{
+    width: 35%;
+    object-fit: cover;
+    display: block;
+}
+
+.containers .bannier-welcome .float-left p{
+    text-align: justify;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+.bannier-welcome .float-left .connect{
+    text-align: center;
+    margin: auto;
+}
+
+.bannier-welcome .float-left .connect ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+.bannier-welcome .float-left .connect ul li a{
+    color: #ccc;
+    text-decoration: none;
+}
+
+.skills{
+    text-align: center;
+    margin-top: 35px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.skills .but{
+    margin: 20px 140px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+.skills .skill-set{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.skills .skill-set .skill{
+    width: 25%;
+    display: block;
+    padding: 20px 0;
+    border-radius: 7px;
+    margin: 15px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.skills .skill-set .skill:hover{
+    scale: 1.025;
+}
+
+.skills .skill-set .skill img{
+    width: 50%;
+}
+
+
+.projects{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.projects .project-set{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+.projects .project-set .project{
+    width: 50%;
+    display: block;
+    padding: 80px 0;
+    margin: 15px;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.projects button{
+    padding: 10px 35px;
+    border: none;
+    text-align: center;
+    border-radius: 7px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.contact form{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+    text-align: start;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.contact form input{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.contact form label{
+    padding-top: 5px;
+}
+
+.contact form input:focus, .contact form textarea:focus{
+    outline: none;
+}
+
+.contact form textarea::placeholder, .contact form input::placeholder{
+    padding: 0 10px;
+}
+
+.contact form textarea{
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background: #433f5c;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+footer p{
+    color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+    .containers{
+        display: block;
+        width: 100%;
+    }
+
+    .containers .bannier-welcome{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    h2, h3, h4{
+        font-size: 32px;
+    }
+
+    .containers .bannier-welcome .float-left{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .containers .bannier-welcome .float-left p{
+        font-size: 18px;
+        display: block;
+    }
+
+    .containers .bannier-welcome .float-right{
+        visibility: none;
+    }
+
+    .skills .skill-set{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        columns: 2;
+    }
+
+    .skills .skill-set .skill{
+        width: 25%;
+        display: block;
+        padding: 20px 0;
+        border-radius: 7px;
+        margin: 15px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+
+    .contact form{
+        width: 45%;
+    }
+
+    .contact form label{
+        font-size: 16px;
+    }
+
+    .contact form textarea{
+        width: 100%;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        height: 40px;
+    }
+}
+
